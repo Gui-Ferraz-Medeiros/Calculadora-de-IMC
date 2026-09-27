@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+}
+
+html {
+    background: #0b0b0d;
+}
+
+body {
+    background: radial-gradient(circle at top, rgba(250, 204, 21, 0.18), transparent 30%),
+        linear-gradient(135deg, #07090d 0%, #111827 40%, #1c1c1f 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #fff;
+    padding: 2rem 1rem;
+}

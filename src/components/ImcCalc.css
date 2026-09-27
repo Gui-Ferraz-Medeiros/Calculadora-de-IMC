@@ -1,0 +1,57 @@
+#calc-container {
+    background: linear-gradient(180deg, rgba(250, 204, 21, 0.08), rgba(17, 17, 20, 0.9));
+    border: 1px solid rgba(250, 204, 21, 0.2);
+    border-radius: 24px;
+    padding: 2rem;
+    min-height: 100%;
+}
+
+#calc-container h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #f8fafc;
+    font-size: clamp(1.5rem, 2vw, 2.2rem);
+    letter-spacing: -0.03em;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.form-control {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.form-control label {
+    margin-bottom: 0.5rem;
+    color: #f5f5f5;
+    font-weight: 700;
+}
+
+.form-control input {
+    padding: 1rem 0.9rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 14px;
+    background: rgba(14, 14, 16, 0.9);
+    color: #f8fafc;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control input:focus {
+    border-color: rgba(250, 204, 21, 0.9);
+    box-shadow: 0 0 0 3px rgba(250, 204, 21, 0.16);
+}
+
+.action-control {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-top: 2rem;
+}

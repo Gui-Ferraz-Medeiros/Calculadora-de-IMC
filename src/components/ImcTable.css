@@ -1,0 +1,149 @@
+.result-panel {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+
+.result-card,
+.history-card {
+    background: rgba(19, 19, 22, 0.92);
+    border: 1px solid rgba(250, 204, 21, 0.15);
+    border-radius: 22px;
+    padding: 1.5rem;
+}
+
+.result-card {
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.6rem;
+    background: linear-gradient(160deg, rgba(250, 204, 21, 0.18), rgba(17, 17, 20, 0.95));
+}
+
+.result-label {
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 0.72rem;
+    color: #facc15;
+}
+
+.result-card strong {
+    font-size: clamp(2.2rem, 4vw, 3.5rem);
+    line-height: 1;
+    color: #f8fafc;
+}
+
+.result-card p,
+.result-card small {
+    color: #f1f5f9;
+}
+
+.status {
+    display: inline-block;
+}
+
+.status.good {
+    color: #d9f99d;
+}
+
+.status.low,
+.status.medium {
+    color: #fcd34d;
+}
+
+.status.high {
+    color: #fca5a5;
+}
+
+.status.neutral {
+    color: #d1d5db;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.history-header h3 {
+    font-size: 1.15rem;
+    color: #f8fafc;
+}
+
+.clear-history {
+    background: transparent;
+    border: 1px solid rgba(250, 204, 21, 0.35);
+    color: #fef3c7;
+    padding: 0.6rem 0.9rem;
+    border-radius: 10px;
+    font-size: 0.75rem;
+    box-shadow: none;
+}
+
+.history-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.8rem 0.9rem;
+    border-radius: 14px;
+    background: rgba(31, 41, 55, 0.9);
+    border: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.history-value,
+.history-date {
+    display: block;
+}
+
+.history-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #f8fafc;
+}
+
+.history-date {
+    font-size: 0.72rem;
+    color: #facc15;
+    margin-top: 0.2rem;
+}
+
+.history-badge {
+    padding: 0.45rem 0.7rem;
+    border-radius: 999px;
+    font-size: 0.68rem;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.history-badge.good {
+    background: rgba(163, 230, 53, 0.18);
+    color: #d9f99d;
+}
+
+.history-badge.low,
+.history-badge.medium {
+    background: rgba(251, 191, 36, 0.18);
+    color: #fcd34d;
+}
+
+.history-badge.high {
+    background: rgba(248, 113, 113, 0.18);
+    color: #fca5a5;
+}
+
+.empty-history {
+    color: #cbd5e1;
+    text-align: center;
+    margin-top: 0.5rem;
+}
